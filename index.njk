@@ -1,0 +1,36 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+
+  <h1>An artist interested in The Web™, technology, films and coffee.</h1>
+  <p>👋 Hey I'm Kush, an artist based in Cebu, Philippines. I'm currently working at <strong>[redacted]</strong>
+  helping mental health companies put their teachings out there.</p>
+
+  <p>
+    <a href="/about">About Kush →</a>
+  </p>
+</section>
+
+<section class="section">
+  <h2>Coffee Log</h2>
+
+  {% for post in collections.featuredProjects | reverse %}
+    <a class="selected-project" href="{{post.url | url }}">
+      <figure>
+        <img src="/img/featured-images/{{ post.data.featured_image }}" alt="{{post.data.title}}" />
+      </figure>
+      <div>
+        <h3>{{ post.data.title}}</h3>
+        <p>{{ post.data.description }} <br /> <br />Read more → </p>
+      </div>
+    </a>
+  {% endfor %}
+
+   <p>
+    <a href="/projects">View all logs →</a>
+  </p>
+</section>

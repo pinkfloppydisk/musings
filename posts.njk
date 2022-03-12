@@ -1,0 +1,24 @@
+---
+layout: layouts/home.njk
+---
+
+<section class="section">
+  <h1>Writing</h1>
+
+</section>
+
+<section class="section">
+  {% for post in collections.posts | reverse %}
+    <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+      <a href="{{ post.url | url }}" class="postlist-link"/>
+      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <h2>
+        {{ post.data.title }}
+        </h2>
+        <p style="font-size:16px ;">{{ post.data.summary }}</p>
+        </a>
+      <br>
+      <br>
+    </div>
+  {% endfor %}
+</section>
