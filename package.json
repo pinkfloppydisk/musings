@@ -1,5 +1,5 @@
 {
-  "name": "@alexpate/www",
+  "name": "@pinkfloppydisk/musings",
   "version": "1.0.0",
   "description": "My personal website",
   "scripts": {
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexpate/www.git"
+    "url": "git://github.com/pinkfloppydisk/musings.git"
   },
   "author": {
-    "name": "Alex Pate",
-    "email": "git@alexjpate.com",
-    "url": "https://alexjpate.com"
+    "name": "Kushaiah",
+    "email": "git@pinkfloppydisk.com",
+    "url": "https://krabf.com"
   },
   "license": "MIT",
   "devDependencies": {
